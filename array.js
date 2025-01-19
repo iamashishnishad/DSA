@@ -10,6 +10,50 @@ const arr = [10, 20, 30, 40, 50];
 // })
 
 
-for(i=0; i<arr.length; i++){
-	console.log(`index of the array ${i} and value of the array ${arr[i]}` )
+// for(i=0; i<arr.length; i++){
+// 	console.log(`index of the array ${i} and value of the array ${arr[i]}` )
+// }
+
+// The for...of loop iterates over the array’s values.
+
+
+// for (const value of arr){
+//     console.log(`value of the array ${value}`)
+// }
+
+
+// Find the Sum of All Elements:
+
+
+// let sum =0;
+
+// for(i=0; i<arr.length; i++){
+//     sum += arr[i];
+// }
+
+// console.log(`sum of the all element ${sum}`)
+
+
+// Search for an Element:
+
+
+// let key = 30;
+
+// for (i =0; i<arr.length; i++){
+//     if(arr[i]==key){
+        
+//         console.log(`we found the element ${arr[i]} and key ${key} and  index ${i}`)
+//         break;
+//     }
+// }
+
+
+// Modify Each Element:
+
+
+for(i=0; i<arr.length;  i++){
+    arr[i] *= 2
 }
+
+
+console.log(`modification of the number ${arr}`)
