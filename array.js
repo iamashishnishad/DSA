@@ -1,6 +1,6 @@
 ///Traverse the array and print the sum of all the elements in the array
 
-const arr = [10, 20, 30, 40, 50];
+// const arr = [10, 20, 30, 40, 50];
 
 
 /// Using the forEach
@@ -51,9 +51,41 @@ const arr = [10, 20, 30, 40, 50];
 // Modify Each Element:
 
 
-for(i=0; i<arr.length;  i++){
-    arr[i] *= 2
+// for(i=0; i<arr.length;  i++){
+//     arr[i] *= 2
+// }
+
+
+// console.log(`modification of the number ${arr}`)
+
+
+
+const arr = [10, 20, 30, 40, 50];
+
+
+if(arr.length == 0){
+    return largest =null; smallest = null; 
 }
 
 
-console.log(`modification of the number ${arr}`)
+let largest = arr[0];
+let smallest = arr[0];
+
+
+for(i=0; i<arr.length; i++){
+
+if(arr[i]>largest){
+    largest = arr[i];
+}
+else if(arr[i]<smallest){
+    smallest =  arr[i]
+}
+}
+
+console.log(`largest number in the array ${largest}`)   
+console.log(`smallest number in the array ${smallest}`)
+
+// 1.	Find the largest/smallest element in an array.
+
+
+
